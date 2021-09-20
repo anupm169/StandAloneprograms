@@ -1,4 +1,4 @@
-package com.zeenet.dataStructures;
+package com.zeenet.stack;
 
 public class BasicStack<X> {
 
