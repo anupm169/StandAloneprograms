@@ -4,7 +4,7 @@ public class StackMainClass {
 
 	public static void main(String[] args) {
 
-		BasicStack<Integer> stack = new BasicStack<>();
+		StackInterface<Integer> stack = new BasicStack<>();
 
 		stack.push(1);
 		stack.push(2);
@@ -17,7 +17,7 @@ public class StackMainClass {
 		System.out.println("the deleted item in stack is : " + stack.pop());
 		System.out.println("the deleted item in stack is : " + stack.pop());
 
-		System.out.println("Is item 2 present : " + stack.contains(2));
+		System.out.println("Is item 2 present : " + stack.containsItem(2));
 
 		System.out.println("trying to access the item : " + stack.access(1));
 		
@@ -38,7 +38,7 @@ public class StackMainClass {
 		System.out.println("the deleted item in stack is : " + listStack.pop());
 		System.out.println("the deleted item in stack is : " + listStack.pop());
 
-		System.out.println("Is item 2 present : " + listStack.containsitem(2));
+		System.out.println("Is item 2 present : " + listStack.containsItem(2));
 
 		System.out.println("trying to access the item : " + listStack.access(1));
 		

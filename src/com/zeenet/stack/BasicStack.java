@@ -1,6 +1,6 @@
 package com.zeenet.stack;
 
-public class BasicStack<X> {
+public class BasicStack<X> implements StackInterface<X>{
 
 	private X[] data;
 
@@ -28,7 +28,7 @@ public class BasicStack<X> {
 		return stackPointer;
 	}
 
-	public boolean contains(X item) {
+	public boolean containsItem(X item) {
 
 		for (int i = 0; i < size(); i++) {
 			if (data[i].equals(item)) {
