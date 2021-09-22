@@ -3,7 +3,7 @@ package com.zeenet.stack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListStack<X> {
+public class ListStack<X> implements StackInterface<X>{
 
 	List<X> list;
 
@@ -26,7 +26,7 @@ public class ListStack<X> {
 		return item;
 	}
 
-	public boolean containsitem(X item) {
+	public boolean containsItem(X item) {
 		boolean found = false;
 
 		for (int i = 0; i < list.size(); i++) {
@@ -53,6 +53,10 @@ public class ListStack<X> {
 
 	public String toString() {
 		return list.toString();
+	}
+
+	public int size() {
+		return list.size();
 	}
 
 }
