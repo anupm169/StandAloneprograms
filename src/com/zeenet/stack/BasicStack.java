@@ -1,6 +1,6 @@
 package com.zeenet.stack;
 
-public class BasicStack<X> implements StackInterface<X>{
+public class BasicStack<X> implements StackInterface<X> {
 
 	private X[] data;
 
@@ -49,6 +49,12 @@ public class BasicStack<X> implements StackInterface<X>{
 		}
 		throw new IllegalStateException("Specified elements could not be found");
 
+	}
+
+	@Override
+	public X top() {
+
+		return data[stackPointer - 1];
 	}
 
 }

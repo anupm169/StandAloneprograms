@@ -3,7 +3,7 @@ package com.zeenet.stack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListStack<X> implements StackInterface<X>{
+public class ListStack<X> implements StackInterface<X> {
 
 	List<X> list;
 
@@ -57,6 +57,10 @@ public class ListStack<X> implements StackInterface<X>{
 
 	public int size() {
 		return list.size();
+	}
+
+	public X top() {
+		return list.get(size() - 1);
 	}
 
 }
