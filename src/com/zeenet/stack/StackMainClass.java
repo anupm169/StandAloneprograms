@@ -11,6 +11,8 @@ public class StackMainClass {
 		stack.push(3);
 		stack.push(4);
 		stack.push(5);
+		
+		System.out.println("the top element is : "+stack.top());
 
 		System.out.println("the deleted item in stack is : " + stack.pop());
 		System.out.println("the deleted item in stack is : " + stack.pop());
@@ -21,16 +23,20 @@ public class StackMainClass {
 
 		System.out.println("trying to access the item : " + stack.access(1));
 		
+		System.out.println("the top element is : "+stack.top());
+		
 		System.out.println("============Stack using List Interface =============");
 
-		ListStack<Integer> listStack = new ListStack<>();
+		StackInterface<Integer> listStack = new ListStack<>();
 
 		listStack.push(1);
 		listStack.push(2);
 		listStack.push(3);
 		listStack.push(4);
 		listStack.push(5);
-
+		
+		System.out.println("the top element is : "+listStack.top());
+		
 		System.out.println(listStack);
 
 		System.out.println("the deleted item in stack is : " + listStack.pop());

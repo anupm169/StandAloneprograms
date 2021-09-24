@@ -11,5 +11,7 @@ public interface StackInterface<X> {
 	public X access(X item);
 
 	public int size();
+	
+	public X top();
 
 }
