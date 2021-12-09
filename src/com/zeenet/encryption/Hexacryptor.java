@@ -23,11 +23,10 @@ public class Hexacryptor {
 	}
 
 	public static void main(String[] args) {
-		String e = "1CE12cs008@";
+		String e = "password";
 		String encrypted = encrypt(e);
 		System.out.println(encrypted);
 		System.out.println(decrypt(encrypted));
-		System.out.println(decrypt("534-360-164-435-436-764-370-232-434-43c-646"));
 	}
 
 }
